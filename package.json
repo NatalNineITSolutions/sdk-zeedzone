@@ -1,0 +1,25 @@
+{
+  "name": "zeedzonesdk",
+  "version": "1.0.0",
+  "main": "dist/zeedzone.js",
+  "types": "dist/zeedzone.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "echo \"No test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.12.2",
+    "dotenv": "^17.2.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "@types/node": "^24.7.1",
+    "@types/axios": "^0.9.36",
+    "ts-node": "^10.9.2"
+  }
+}
