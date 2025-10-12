@@ -1,0 +1,1 @@
+{"version":3,"file":"axiosInstance.d.ts","sourceRoot":"","sources":["../../src/api/axiosInstance.ts"],"names":[],"mappings":"AAAA,OAAc,EAAE,aAAa,EAAE,MAAM,OAAO,CAAC;AAE7C,MAAM,CAAC,OAAO,OAAO,WAAW;IAC9B,OAAO,CAAC,MAAM,CAAgB;gBAElB,MAAM,EAAE,MAAM;IAOpB,OAAO,CAAC,MAAM,EAAE,MAAM,EAAE,GAAG,EAAE,MAAM,EAAE,IAAI,CAAC,EAAE,GAAG;IAIrD,IAAI,QAAQ,kBAEX;CACF"}

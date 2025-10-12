@@ -1,8 +1,8 @@
 {
   "name": "zeedzonesdk",
   "version": "1.0.0",
-  "main": "dist/zeedzone.js",
-  "types": "dist/zeedzone.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build",
