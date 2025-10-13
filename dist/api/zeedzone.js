@@ -66,6 +66,236 @@ class ZeedOneAPI {
     deleteClient(id) {
         return this.axiosClient.request("delete", `/client/${id}`);
     }
+    // HR---------------------------------------
+    // employees
+    getAllEmployees() {
+        return this.axiosClient.request('get', '/employee');
+    }
+    getEmplyoeesByID(id) {
+        return this.axiosClient.request('get', `/employee/${id}`);
+    }
+    addEmployee(data) {
+        return this.axiosClient.request('post', `/employee`, data);
+    }
+    deleteEmployee(id) {
+        return this.axiosClient.request('delete', `/employee/${id}`);
+    }
+    editEmployee(id, data) {
+        return this.axiosClient.request('put', `/employee/${id}`, data);
+    }
+    // department
+    getAllDeparment() {
+        return this.axiosClient.request('get', '/department');
+    }
+    getDeparmentByID(id) {
+        return this.axiosClient.request('get', `/department/${id}`);
+    }
+    addDeparment(data) {
+        return this.axiosClient.request('post', `/department`, data);
+    }
+    deleteDeparment(id) {
+        return this.axiosClient.request('delete', `/department/${id}`);
+    }
+    editDeparment(id, data) {
+        return this.axiosClient.request('put', `/department/${id}`, data);
+    }
+    // designation
+    getAllDesignation() {
+        return this.axiosClient.request('get', '/designation');
+    }
+    getDesignationByID(id) {
+        return this.axiosClient.request('get', `/designation/${id}`);
+    }
+    addDesignation(data) {
+        return this.axiosClient.request('post', `/designation`, data);
+    }
+    deleteDesignation(id) {
+        return this.axiosClient.request('delete', `/designation/${id}`);
+    }
+    editDesignation(id, data) {
+        return this.axiosClient.request('put', `/designation/${id}`, data);
+    }
+    // holiday
+    getAllHoliday() {
+        return this.axiosClient.request('get', '/holiday');
+    }
+    getAllHolidayById(id) {
+        return this.axiosClient.request('get', `/holiday/${id}`);
+    }
+    addHoliday(data) {
+        return this.axiosClient.request('post', `/holiday`, data);
+    }
+    deleteHoliday(id) {
+        return this.axiosClient.request('delete', `/holiday/${id}`);
+    }
+    editHoliday(id, data) {
+        return this.axiosClient.request('put', `/holiday/${id}`, data);
+    }
+    // ------------work
+    // project
+    getAllProjects() {
+        return this.axiosClient.request('get', '/project');
+    }
+    getMyProjects(id) {
+        return this.axiosClient.request('get', `/project/${id}`);
+    }
+    getProjectsByWithQuery() {
+        return this.axiosClient.request('get', `/project`);
+    }
+    getProjectById(id) {
+        return this.axiosClient.request('get', `/project/${id}`);
+    }
+    getProjectTasks(projectID) {
+        return this.axiosClient.request('get', `/project/${projectID}`);
+    }
+    addProject(data) {
+        return this.axiosClient.request('post', `/project`, data);
+    }
+    editProject(id, data) {
+        return this.axiosClient.request('put', `/project/${id}`, data);
+    }
+    deleteProject(id) {
+        return this.axiosClient.request('delete', `/project/${id}`);
+    }
+    // gettasks
+    getAllTasks() {
+        return this.axiosClient.request('get', `/task`);
+    }
+    getAllSubTasksByTaskId(id) {
+        return this.axiosClient.request('get', `/task/${id}/subtasks`);
+    }
+    getSubTasksByTaskIdAndSubTaskId(taskid, subTaskId) {
+        return this.axiosClient.request('get', `/task/${taskid}/subtasks/${subTaskId}`);
+    }
+    addTask(data) {
+        return this.axiosClient.request('post', `/task`, data);
+    }
+    editTask(taskID, data) {
+        return this.axiosClient.request('post', `/task/${taskID}`, data);
+    }
+    deleteTask(taskID) {
+        return this.axiosClient.request('post', `/task/${taskID}`);
+    }
+    // -------------Contract
+    getAllContractType() {
+        return this.axiosClient.request("get", "/contract-type");
+    }
+    getContractTypeById(id) {
+        return this.axiosClient.request("get", `/contract-type/${id}`);
+    }
+    addContractType(data) {
+        return this.axiosClient.request("post", "/contract-type", data);
+    }
+    EditContractType(id, data) {
+        return this.axiosClient.request("put", `/contract-type/${id}`, data);
+    }
+    deleteContractType(id) {
+        return this.axiosClient.request("delete", `/contract-type/${id}`);
+    }
+    // getcontract
+    getAllContract() {
+        return this.axiosClient.request("get", `/contract`);
+    }
+    addContract(data) {
+        return this.axiosClient.request("post", `/contract`, data);
+    }
+    getContractById(id) {
+        return this.axiosClient.request("get", `/contract/${id}`);
+    }
+    editContract(id, data) {
+        return this.axiosClient.request("put", `/contract/${id}`, data);
+    }
+    deleteContract(id) {
+        return this.axiosClient.request("delete", `/contract/${id}`);
+    }
+    // ----------------------Finance
+    // estimate
+    getAllEstimates() {
+        return this.axiosClient.request("get", `/estimate`);
+    }
+    addEstimates(data) {
+        return this.axiosClient.request("post", `/estimate`, data);
+    }
+    getEstimatesById(id) {
+        return this.axiosClient.request("get", `/estimate/${id}`);
+    }
+    editEstimates(id, data) {
+        return this.axiosClient.request("put", `/estimate/${id}`, data);
+    }
+    deleteEstimates(id) {
+        return this.axiosClient.request("delete", `/estimate/${id}`);
+    }
+    // invoices
+    getAllInvoices() {
+        return this.axiosClient.request("get", `/estimate`);
+    }
+    addInvoice(data) {
+        return this.axiosClient.request("post", `/invoice`, data);
+    }
+    getInvoicesById(id) {
+        return this.axiosClient.request("get", `/invoice/${id}`);
+    }
+    editInvoice(id, data) {
+        return this.axiosClient.request("put", `/invoice/${id}`, data);
+    }
+    deleteInvoice(id) {
+        return this.axiosClient.request("delete", `/invoice/${id}`);
+    }
+    //-------------Notice Board
+    getAllNotice() {
+        return this.axiosClient.request("get", `/notice`);
+    }
+    addNotice(data) {
+        return this.axiosClient.request("post", `/notice`, data);
+    }
+    getNoticeById(id) {
+        return this.axiosClient.request("get", `/notice/${id}`);
+    }
+    editNotice(id, data) {
+        return this.axiosClient.request("put", `/notice/${id}`, data);
+    }
+    deleteNotice(id) {
+        return this.axiosClient.request("delete", `/notice/${id}`);
+    }
+    // events
+    getAllEvents() {
+        return this.axiosClient.request("get", `/event`);
+    }
+    addEvents(data) {
+        return this.axiosClient.request("post", `/event`, data);
+    }
+    getEventById(id) {
+        return this.axiosClient.request("get", `/event/${id}`);
+    }
+    editEvents(id, data) {
+        return this.axiosClient.request("put", `/event/${id}`, data);
+    }
+    deleteEvents(id) {
+        return this.axiosClient.request("delete", `/event/${id}`);
+    }
+    // products
+    getAllProducts() {
+        return this.axiosClient.request("get", `/products`);
+    }
+    addProducts(data) {
+        return this.axiosClient.request("post", `/product`, data);
+    }
+    getProductById(id) {
+        return this.axiosClient.request("get", `/products/${id}`);
+    }
+    editProducts(id, data) {
+        return this.axiosClient.request("put", `/product/${id}`, data);
+    }
+    deleteProducts(id) {
+        return this.axiosClient.request("delete", `/product/${id}`);
+    }
+    // Attendence 
+    AttendenceClocksIn(data) {
+        return this.axiosClient.request("post", `attendance/clock-in`, data);
+    }
+    AttendenceClocksOut(data) {
+        return this.axiosClient.request("post", `attendance/clock-out`, data);
+    }
 }
 exports.default = ZeedOneAPI;
 //# sourceMappingURL=zeedzone.js.map
