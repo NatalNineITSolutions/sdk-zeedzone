@@ -90,5 +90,28 @@ export default class ZeedOneAPI {
     deleteProducts(id: number): Promise<any>;
     AttendenceClocksIn(data: object): Promise<any>;
     AttendenceClocksOut(data: object): Promise<any>;
+    getAllTickets(): Promise<any>;
+    getAllTicketType(): Promise<any>;
+    getAllGroup(): Promise<any>;
+    getTicketMe(): Promise<any>;
+    getTicketUsers(id: number): Promise<any>;
+    getTicketReply(): Promise<any>;
+    getAllsChats(): Promise<any>;
+    getAllOrders(): Promise<any>;
+    getMyOrders(): Promise<any>;
+    addOrder(data: object): Promise<any>;
+    getPaymentCredentials(data: object): Promise<any>;
+    getAllProductCategory(): Promise<any>;
+    getProductCategoryId(id: number): Promise<any>;
+    addCostCode(data: object): Promise<any>;
+    updateCostCode(id: number, data: object): Promise<any>;
+    deleteCostCode(id: number): Promise<any>;
+    getCostCode(): Promise<any>;
+    addSubCostCode(data: object): Promise<any>;
+    updateSubCostCode(id: number, data: object): Promise<any>;
+    deleteSubCostCode(id: number): Promise<any>;
+    getSubCostCode(): Promise<any>;
+    addParty(data: object): Promise<any>;
+    getParties(): Promise<any>;
 }
 //# sourceMappingURL=zeedzone.d.ts.map

@@ -289,12 +289,90 @@ class ZeedOneAPI {
     deleteProducts(id) {
         return this.axiosClient.request("delete", `/product/${id}`);
     }
-    // Attendence 
+    // ----------------Attendence 
     AttendenceClocksIn(data) {
-        return this.axiosClient.request("post", `attendance/clock-in`, data);
+        return this.axiosClient.request("post", `/attendance/clock-in`, data);
     }
     AttendenceClocksOut(data) {
-        return this.axiosClient.request("post", `attendance/clock-out`, data);
+        return this.axiosClient.request("post", `/attendance/clock-out`, data);
+    }
+    //----------------------- tickets
+    getAllTickets() {
+        return this.axiosClient.request("get", "/ticket");
+    }
+    getAllTicketType() {
+        return this.axiosClient.request("get", "/ticket-type");
+    }
+    getAllGroup() {
+        return this.axiosClient.request("get", "/ticket-group");
+    }
+    getTicketMe() {
+        return this.axiosClient.request("get", "/ticket/me");
+    }
+    getTicketUsers(id) {
+        return this.axiosClient.request("get", `/ticket/user/${id}`);
+    }
+    getTicketReply() {
+        return this.axiosClient.request("get", `/ticket/ticket-reply`);
+    }
+    // ---------Chats
+    getAllsChats() {
+        return this.axiosClient.request("get", `/userchat/user-list`);
+    }
+    // ---------Orders
+    getAllOrders() {
+        return this.axiosClient.request("get", `/order`);
+    }
+    getMyOrders() {
+        return this.axiosClient.request("get", `/orders/me`);
+    }
+    addOrder(data) {
+        return this.axiosClient.request("post", `/orders/me`, data);
+    }
+    // -----------Payment
+    getPaymentCredentials(data) {
+        return this.axiosClient.request("get", `/orders/me`, data);
+    }
+    // ----- Product Category
+    getAllProductCategory() {
+        return this.axiosClient.request("get", `/productcategory`);
+    }
+    getProductCategoryId(id) {
+        return this.axiosClient.request("get", `/productcategory/${id}`);
+    }
+    //---------------------------- Construction-Module API
+    // code codes
+    addCostCode(data) {
+        return this.axiosClient.request("psot", "/cost-codes", data);
+    }
+    updateCostCode(id, data) {
+        return this.axiosClient.request("put", `/cost-codes/${id}`, data);
+    }
+    deleteCostCode(id) {
+        return this.axiosClient.request("delete", `/cost-codes/${id}`);
+    }
+    getCostCode() {
+        return this.axiosClient.request("get", `/cost-codes`);
+    }
+    // subcost code
+    addSubCostCode(data) {
+        return this.axiosClient.request("post", "/sub-cost-codes", data);
+    }
+    updateSubCostCode(id, data) {
+        return this.axiosClient.request("put", `/sub-cost-codes/${id}`, data);
+    }
+    deleteSubCostCode(id) {
+        return this.axiosClient.request("delete", `/sub-cost-codes/${id}`);
+    }
+    getSubCostCode() {
+        return this.axiosClient.request("get", `/sub-cost-codes`);
+    }
+    // Party library
+    addParty(data) {
+        return this.axiosClient.request("post", "/parties", data);
+    }
+    getParties() {
+        return this.axiosClient.request("get", "/parties");
     }
 }
 exports.default = ZeedOneAPI;
