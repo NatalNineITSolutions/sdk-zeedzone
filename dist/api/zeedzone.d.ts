@@ -112,6 +112,24 @@ export default class ZeedOneAPI {
     deleteSubCostCode(id: number): Promise<any>;
     getSubCostCode(): Promise<any>;
     addParty(data: object): Promise<any>;
-    getParties(): Promise<any>;
+    getAllParties(): Promise<any>;
+    getPartyById(id: number): Promise<any>;
+    updateParties(id: number, data: object): Promise<any>;
+    deleteParties(id: number): Promise<any>;
+    addEquipments(data: object): Promise<any>;
+    getAllEquipments(): Promise<any>;
+    getEquipmentById(id: number): Promise<any>;
+    updateEquipment(id: number, data: object): Promise<any>;
+    deleteEquipment(id: number): Promise<any>;
+    addWorkForces(data: object): Promise<any>;
+    getAllWorkForces(): Promise<any>;
+    getWorkForceById(id: number): Promise<any>;
+    updateWorkForces(id: number, data: object): Promise<any>;
+    deleteWorkForces(id: number): Promise<any>;
+    addMaterials(data: object): Promise<any>;
+    getAllMaterials(): Promise<any>;
+    getMaterialById(id: number): Promise<any>;
+    updateMaterials(id: number, data: object): Promise<any>;
+    deleteMaterials(id: number): Promise<any>;
 }
 //# sourceMappingURL=zeedzone.d.ts.map

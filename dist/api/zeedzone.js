@@ -371,8 +371,65 @@ class ZeedOneAPI {
     addParty(data) {
         return this.axiosClient.request("post", "/parties", data);
     }
-    getParties() {
+    getAllParties() {
         return this.axiosClient.request("get", "/parties");
+    }
+    getPartyById(id) {
+        return this.axiosClient.request("get", `/parties/${id}`);
+    }
+    updateParties(id, data) {
+        return this.axiosClient.request("put", `/parties/${id}`, data);
+    }
+    deleteParties(id) {
+        return this.axiosClient.request("delete", `/parties/${id}`);
+    }
+    // Equipments
+    addEquipments(data) {
+        return this.axiosClient.request("post", "/equipments", data);
+    }
+    getAllEquipments() {
+        return this.axiosClient.request("get", "/equipments");
+    }
+    getEquipmentById(id) {
+        return this.axiosClient.request("get", `/equipments/${id}`);
+    }
+    updateEquipment(id, data) {
+        return this.axiosClient.request("put", `/equipments/${id}`, data);
+    }
+    deleteEquipment(id) {
+        return this.axiosClient.request("delete", `/equipments/${id}`);
+    }
+    // Workforces
+    addWorkForces(data) {
+        return this.axiosClient.request("post", "/workforces", data);
+    }
+    getAllWorkForces() {
+        return this.axiosClient.request("get", "/workforces");
+    }
+    getWorkForceById(id) {
+        return this.axiosClient.request("get", `/workforces/${id}`);
+    }
+    updateWorkForces(id, data) {
+        return this.axiosClient.request("put", `/workforces/${id}`, data);
+    }
+    deleteWorkForces(id) {
+        return this.axiosClient.request("delete", `/workforces/${id}`);
+    }
+    // materials
+    addMaterials(data) {
+        return this.axiosClient.request("post", "/materials", data);
+    }
+    getAllMaterials() {
+        return this.axiosClient.request("get", "/materials");
+    }
+    getMaterialById(id) {
+        return this.axiosClient.request("get", `/materials/${id}`);
+    }
+    updateMaterials(id, data) {
+        return this.axiosClient.request("put", `/materials/${id}`, data);
+    }
+    deleteMaterials(id) {
+        return this.axiosClient.request("delete", `/materials/${id}`);
     }
 }
 exports.default = ZeedOneAPI;

@@ -565,9 +565,116 @@ export default class ZeedOneAPI {
     return this.axiosClient.request("post", "/parties",data)
   }
 
-      getParties() {
+   getAllParties() {
     return this.axiosClient.request("get", "/parties")
   }
+
+
+  getPartyById(id:number){
+      return this.axiosClient.request("get", `/parties/${id}`)
+  }
+
+   updateParties(id:number,data:object) {
+    return this.axiosClient.request("put", `/parties/${id}`,data)
+  }
+
+
+  
+  deleteParties(id:number){
+      return this.axiosClient.request("delete", `/parties/${id}`)
+  }
+
+
+
+  // Equipments
+
+
+    addEquipments(data:object) {
+    return this.axiosClient.request("post", "/equipments",data)
+  }
+
+   getAllEquipments() {
+    return this.axiosClient.request("get", "/equipments")
+  }
+
+
+  getEquipmentById(id:number){
+      return this.axiosClient.request("get", `/equipments/${id}`)
+  }
+
+   updateEquipment(id:number,data:object) {
+    return this.axiosClient.request("put", `/equipments/${id}`,data)
+  }
+
+
+  
+  deleteEquipment(id:number){
+      return this.axiosClient.request("delete", `/equipments/${id}`)
+  }
+
+
+
+  // Workforces
+
+
+
+    addWorkForces(data:object) {
+    return this.axiosClient.request("post", "/workforces",data)
+  }
+
+   getAllWorkForces() {
+    return this.axiosClient.request("get", "/workforces")
+  }
+
+
+  getWorkForceById(id:number){
+      return this.axiosClient.request("get", `/workforces/${id}`)
+  }
+
+   updateWorkForces(id:number,data:object) {
+    return this.axiosClient.request("put", `/workforces/${id}`,data)
+  }
+
+
+  
+  deleteWorkForces(id:number){
+      return this.axiosClient.request("delete", `/workforces/${id}`)
+  }
+
+
+  // materials
+
+
+   addMaterials(data:object) {
+    return this.axiosClient.request("post", "/materials",data)
+  }
+
+   getAllMaterials() {
+    return this.axiosClient.request("get", "/materials")
+  }
+
+
+  getMaterialById(id:number){
+      return this.axiosClient.request("get", `/materials/${id}`)
+  }
+
+   updateMaterials(id:number,data:object) {
+    return this.axiosClient.request("put", `/materials/${id}`,data)
+  }
+
+
+  
+  deleteMaterials(id:number){
+      return this.axiosClient.request("delete", `/materials/${id}`)
+  }
+
+
+
+
+
+
+
+
 
 
 
