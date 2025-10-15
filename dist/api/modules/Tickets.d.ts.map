@@ -1,0 +1,1 @@
+{"version":3,"file":"Tickets.d.ts","sourceRoot":"","sources":["../../../src/api/modules/Tickets.ts"],"names":[],"mappings":"AAAA,OAAO,WAAW,MAAM,2BAA2B,CAAC;AAEpD,MAAM,CAAC,OAAO,OAAO,OAAO;IAC1B,OAAO,CAAC,WAAW,CAAc;gBAErB,MAAM,EAAE,WAAW;IAI9B,aAAa;IAId,gBAAgB;IAIhB,WAAW;IAIX,WAAW;IAIX,cAAc,CAAC,EAAE,EAAE,MAAM;IAIzB,cAAc;CAQf"}

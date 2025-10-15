@@ -1,0 +1,1 @@
+{"version":3,"file":"Chat.js","sourceRoot":"","sources":["../../../src/api/modules/Chat.ts"],"names":[],"mappings":";;AAEA,MAAqB,KAAK;IAGtB,YAAY,MAAmB;QAC7B,IAAI,CAAC,WAAW,GAAG,MAAM,CAAC;IAC5B,CAAC;IAGD,YAAY;QACR,OAAO,IAAI,CAAC,WAAW,CAAC,OAAO,CAAC,KAAK,EAAE,qBAAqB,CAAC,CAAA;IACjE,CAAC;CAQJ;AAlBD,wBAkBC"}
