@@ -1,7 +1,7 @@
 {
   "name": "zeedone-sdk",
-  "version": "1.0.1",
-  "description": "Official ZeedOne API SDK for Node.js",
+  "version": "1.0.2",
+  "description": "Official ZeedOne CRM SDK for connecting applications with ZeedOne APIs.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -9,8 +9,24 @@
     "prepare": "npm run build",
     "test": "echo \"No test specified\" && exit 1"
   },
-  "keywords": ["zeedone", "sdk", "crm", "api"],
-  "author": "",
+  "keywords": [
+    "zeedone",
+    "sdk",
+    "crm",
+    "api",
+    "zeedone-crm",
+    "integration",
+    "typescript"
+  ],
+  "author": "Akhil (ZeedOne)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NatalNineITSolutions/sdk-zeedzone"
+  },
+  "homepage": "https://www.npmjs.com/package/zeedone-sdk",
+  "bugs": {
+    "url": "https://github.com/NatalNineITSolutions/sdk-zeedzone/issues"
+  },
   "license": "ISC",
   "dependencies": {
     "axios": "^1.12.2",
@@ -23,3 +39,4 @@
     "ts-node": "^10.9.2"
   }
 }
+
