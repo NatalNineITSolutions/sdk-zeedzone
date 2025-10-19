@@ -5,7 +5,7 @@ export default class AxiosClient {
 
   constructor(ApiKey: string) {
     this.client = axios.create({
-      baseURL: process.env.BASE_URL,
+      baseURL: process.env.ZEEDONE_API_BASE_URL || "http://app.zeedone.com",
       headers: { Authorization: `Bearer ${ApiKey}` },
     });
   }

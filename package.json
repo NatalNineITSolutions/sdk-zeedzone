@@ -1,6 +1,7 @@
 {
-  "name": "zeedzonesdk",
-  "version": "1.0.0",
+  "name": "zeedone-sdk",
+  "version": "1.0.1",
+  "description": "Official ZeedOne API SDK for Node.js",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -8,10 +9,9 @@
     "prepare": "npm run build",
     "test": "echo \"No test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["zeedone", "sdk", "crm", "api"],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "axios": "^1.12.2",
     "dotenv": "^17.2.3"

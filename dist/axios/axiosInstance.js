@@ -7,7 +7,7 @@ const axios_1 = __importDefault(require("axios"));
 class AxiosClient {
     constructor(ApiKey) {
         this.client = axios_1.default.create({
-            baseURL: process.env.BASE_URL,
+            baseURL: process.env.ZEEDONE_API_BASE_URL || "http://app.zeedone.com",
             headers: { Authorization: `Bearer ${ApiKey}` },
         });
     }
