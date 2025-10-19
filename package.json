@@ -23,7 +23,7 @@
     "type": "git",
     "url": "https://github.com/NatalNineITSolutions/sdk-zeedzone"
   },
-  "homepage": "https://www.npmjs.com/package/zeedone-sdk",
+  "homepage": "https://www.npmjs.com/package/@zeedone/sdk",
   "bugs": {
     "url": "https://github.com/NatalNineITSolutions/sdk-zeedzone/issues"
   },
