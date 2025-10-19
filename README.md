@@ -8,4 +8,4 @@ Easily manage companies, leads, users, and other CRM modules from any JavaScript
 ## 📦 Installation
 
 ```bash
-npm install zeedone-sdk
+npm i @zeedone/sdk
